@@ -1,6 +1,5 @@
 ﻿# Arduino Air Guitar
-This will serve as a brief description of your project. Limit this to three sentences because it can become overly long at that point. This copy should draw the user in and make she/him want to read more.
-
+This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer. Using the glove one can choose which note to play and the strummer helps in choosing the pitch and strum the guitar, imitating a normal guitar. 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Vedika Sharma | Cupertino High School | Electrical Engineering | Incoming Senior
