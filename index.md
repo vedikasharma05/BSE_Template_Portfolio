@@ -21,4 +21,4 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 
 My First milestone was setting up the accelerometer with the arduino. The accelerometer I used had an in-built gyroscope which gave me the position of my hands to imitate a classic guitar. I could not find a documentation for the code library I was working with, so upon doing some research I came across the command sheet of the chips manufacturer. Using that I was able to complete my code. My next step is to finish up the circuit by adding a couple other components and start assembling the device. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OQkpQJ_ErFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OQkpQJ_ErFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
