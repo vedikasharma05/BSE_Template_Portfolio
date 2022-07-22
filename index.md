@@ -52,7 +52,9 @@ Here is a list of everything you need for the project!
 # Schematic 
 
 # Code 
-#include <MPU6050.h>
+
+```cp
+<#include <MPU6050.h>
 #include <Wire.h>
 
 const int MPU_ADDR = 0x68; 
@@ -130,3 +132,80 @@ int get_string_pressed(){
 
   return -1;
 }
+
+/*
+ * Function to check the distance index of the pluck. 
+ * Untrasonic sensor returns distance between 0-1183 cm. We divide this whole length into
+ * 20 equal units (because, our frequency table has 20 steps per string).
+*/
+int get_pluck_distance_index(){
+  /*Read ultrasonic sensor*/
+  float distance = read_distance();
+  int index = distance / (MAX_DISTANCE_CMS / 20);
+  return index;
+}
+
+
+/*Function to check if the guitar string is plucked*/
+boolean is_string_plucked(){
+  //Read accelerometer
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x3B);// Start with register 0x3B (ACCEL_XOUT_H)
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU_ADDR, 6, true);
+  //For a range of +-2g, we need to divide the raw values by 16384, according to the datasheet
+  float accX = (Wire.read() << 8 | Wire.read()) / 16384.0;
+  float accY = (Wire.read() << 8 | Wire.read()) / 16384.0;
+  float accZ = (Wire.read() << 8 | Wire.read()) / 16384.0;
+
+  float diffX = fabs(lastAccX - accX);
+  float diffY = fabs(lastAccY - accY);
+  float diffZ = fabs(lastAccZ - accZ);
+  //TODO::For now, we are using breadboard, therefore, we will check acc in Y direction only
+  //Serial.print("diffX=");Serial.print(diffX);Serial.print(",diffY=");Serial.print(diffY);Serial.print(",diffZ=");Serial.println(diffZ);
+  return( diffY >= 0.1);
+}
+/*PLay a note based on the pluck distance and the string pressed*/
+void play_note(int frequency){
+
+  /*int start_time = millis();
+  int end_time = start_time;
+
+  while ((end_time-start_time) <= 100){
+    
+    int time_period = 1/frequency;
+    int on_time = time_period / 2;
+    int off_time= time_period / 2;
+    digitalWrite(SPEAKER_PIN,HIGH);
+    delayMicroseconds(on_time);
+    digitalWrite(SPEAKER_PIN,LOW);
+    delayMicroseconds(off_time);
+
+    end_time = millis();
+  }*/
+  noTone(SPEAKER_PIN);
+  tone(SPEAKER_PIN,frequency,10);
+}
+
+/*Reads the distance between the transmitter and the reciever of the ultrasonic sensor*/
+float read_distance(){
+  // Clears the trigPin condition
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+
+  //turning on TRIG_PIN 
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+
+  // Reads the echoPin, returns the sound wave travel time in microseconds
+  int duration = pulseIn(ECHO_PIN, HIGH);
+  
+  // Calculating the distance
+  float distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
+
+  //Serial.print("Distance= "); Serial.println(distance); 
+  return distance; 
+    
+}>
+```
