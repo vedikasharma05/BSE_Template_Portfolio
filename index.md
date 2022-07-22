@@ -2,14 +2,14 @@
 This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer. Using the glove one can choose which note to play and the strummer helps in choosing the pitch and strum the guitar, imitating a normal guitar. 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Vedika Sharma | Cupertino High School | Electrical Engineering | Incoming Senior
+| Vedika S. | Cupertino High School | Electrical Engineering | Incoming Senior
 
 ![Headstone Image](https://github.com/BlueStampEng/BSE_Template_Portfolio/blob/4655d8c4b2f1d0fa5912511d0b39542520b9f88e/branding/BlueStamp-Engineering-Logo-White.png)
   
 # Final Milestone
-My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint. 
+My final milestone was the make the glove which would represent the keys of the guitar and put final piece together. Though I did not run into any problems while doing this but a big breakdown was that I accidently which brought a hault to my project for a day. Overall, I am pretty happy with the way this tunred out but in the future I would work on the wiring, improve the code to do multiple tasks at one time and maybe modify this into a Ukulele because there are 4 strings and I have 4 finger controls! 
 
-[![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone"){:target="_blank" rel="noopener"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZzfacvheviM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Second Milestone
 My Second Milestone was generating tones with the ultrasonic sensor. I wrote a piece of code that gave me the distance between the UltraSonic sensor's emitter and receiver; the shorter the distance the lower the pitch and the longer the distance the higher the pitch. When I move the breadboard which has the gyroscope in it, a sound is generated indicating a string was plucked. A major issue I had was that I did not know how to generate sounds in the first place. So, I chose a couple of notes, got the frequencies converted it into microseconds and then tested it out. Once I had got that working, I combined it with the distance sensing code. My next goal is to figure out hand controls to indicate what key is being played then assemble the final piece. 
