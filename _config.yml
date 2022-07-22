@@ -1,2 +1,7 @@
 theme: jekyll-theme-slate
 markdown: kramdown
+
+title: Vedika S. BSE Portfolio
+description: Arduino Air Guitar
+
+show_downloads : [false]
