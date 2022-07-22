@@ -10,7 +10,10 @@ This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer.
 
 
 # Project Picture 
-<img src = "(https://user-images.githubusercontent.com/72050310/180518314-00cac4af-10e9-4404-a8d4-ea1087dc9ce2.jpg)" width = "500" height = "200"/>
+<img src = "(https://user-images.githubusercontent.com/72050310/180518314-00cac4af-10e9-4404-a8d4-ea1087dc9ce2.jpg)" width = "300" height = "200"/>
+
+# Project Video 
+
 
   
 # Final Milestone
