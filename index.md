@@ -6,7 +6,7 @@ This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer.
  | Vedika S. |Cupertino High School |Electrical Engineering |Incoming Senior|
 
 
-![Headstone Image]![IMG_1123](https://user-images.githubusercontent.com/72050310/180515991-b9f9c138-5d7d-441d-9253-a1f9b7902888.jpg)
+![Headstone Image]!
   
 # Final Milestone
 My final milestone was the make the glove which would represent the keys of the guitar and put final piece together. Though I did not run into any major problems while doing this but a breakdown was that I accidently broke one of the accelerometer pins which brought a hault to my project for a day. Overall, I am pretty happy with the way this tunred out but in the future I would work on the wiring, improve the code to do multiple tasks at one time and maybe modify this into a Ukulele because there are 4 strings and I have 4 finger controls! 
