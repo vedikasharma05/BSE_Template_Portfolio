@@ -6,8 +6,8 @@ This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer.
  | Vedika S. |Cupertino High School |Electrical Engineering |Incoming Senior|
 
 
-![Headstone Image]!
-![IMG_1123](https://user-images.githubusercontent.com/72050310/180516357-11ce3a2c-c6c2-44a1-87a5-e348b9397158.jpg width ="200" height = "400)
+![Headstone Image]!<img src="https://user-images.githubusercontent.com/72050310/180516357-11ce3a2c-c6c2-44a1-87a5-e348b9397158.jpg" width="200" height="400") />
+
 
   
 # Final Milestone
