@@ -48,3 +48,85 @@ Here is a list of everything you need for the project!
 | Resistors | 4 | $1.04/count | https://www.amazon.com/AUKENIEN-1250pcs-Resistor-Assortment-Resistors/dp/B0967TG6XR/ref=sr_1_1_sspa?keywords=resistor+330+ohm&qid=1658522150&sprefix=resistors+330%2Caps%2C142&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyV1c2RDEwME1BTkZDJmVuY3J5cHRlZElkPUEwODk1ODQxMTFXNDdCTjAxQzBFJmVuY3J5cHRlZEFkSWQ9QTAxNTkzMzNOVkYzOUc3VjA2M0Qmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl |
 | Conductive Fabric | 1 | $15.99 |https://www.amazon.com/Enclosures-Military-Conductive-Material-Bluetooth%EF%BC%891/dp/B09S36QP4P/ref=sr_1_1_sspa?crid=3EM1Q0GSLPD9J&keywords=conductive+fabric&qid=1658522179&sprefix=conductive+fabri%2Caps%2C139&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTlBWUERWMVM3NDUxJmVuY3J5cHRlZElkPUEwODA3MTk3MTBOUzJDNkpWVDBIVyZlbmNyeXB0ZWRBZElkPUEwMDc1OTE4MUxGMEg1Q0VTRjg3SCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= |
 
+
+# Schematic 
+
+# Code 
+#include <MPU6050.h>
+#include <Wire.h>
+
+const int MPU_ADDR = 0x68; 
+float lastAccX=0.0f,lastAccY=0.0f,lastAccZ=0.0f;
+/*PINS*/
+#define SPEAKER_PIN 7
+#define TRIG_PIN 3
+#define ECHO_PIN 2
+#define G_PIN 12
+#define D_PIN 11
+#define A_PIN 10
+#define E_PIN 9
+/*Supported strings*/
+#define STRING_G 0
+#define STRING_D 1
+#define STRING_A 2
+#define STRING_E 3
+/*Ultrasonic sensor constants*/
+#define MAX_DISTANCE_CMS 70
+
+/*Define note frequencies*/
+unsigned int frequency_table[4][5] ={
+  {220,262,329,392,440}, //G
+  {156,185,208,233,277}, //D
+  {123,147,175,196,220}, //A
+  {92,104,117,139,156} //E
+};
+
+float previous_pitch=0.0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+  
+  pinMode(G_PIN, INPUT);
+  pinMode(D_PIN, INPUT);
+  pinMode(A_PIN, INPUT);
+  pinMode(E_PIN, INPUT);
+  
+  //Setup MPU6050
+  Wire.begin();
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x6B); //Talk to register 6B
+  Wire.write(0x00); //Reset MPU
+  Wire.endTransmission(true);
+  delay(20);//allow reset
+}
+/**
+ * The main loop
+ */
+void loop() {
+  if(is_string_plucked() == true){
+    int string_pressed = get_string_pressed();
+    if(string_pressed == -1) return;
+    int pluck_index = get_pluck_distance_index();
+    int frequency_to_play = frequency_table[string_pressed][pluck_index];
+
+    Serial.print("P=");Serial.print(string_pressed);Serial.print(",D=");Serial.print(pluck_index);Serial.print(",F="); Serial.println(frequency_to_play);
+    play_note(frequency_to_play*10);  
+  }
+}
+
+/*Function to check which note is pressed*/
+int get_string_pressed(){
+  int gPin = digitalRead(G_PIN);
+  int dPin = digitalRead(D_PIN);
+  int aPin = digitalRead(A_PIN);
+  int ePin = digitalRead(E_PIN);
+
+  if(gPin == LOW) return STRING_G;
+  if(dPin == LOW) return STRING_D;
+  if(aPin == LOW) return STRING_A;
+  if(ePin == LOW) return STRING_E;
+
+  return -1;
+}
