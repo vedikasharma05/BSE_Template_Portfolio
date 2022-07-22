@@ -7,7 +7,7 @@ This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer.
 ![Headstone Image](https://github.com/BlueStampEng/BSE_Template_Portfolio/blob/4655d8c4b2f1d0fa5912511d0b39542520b9f88e/branding/BlueStamp-Engineering-Logo-White.png)
   
 # Final Milestone
-My final milestone was the make the glove which would represent the keys of the guitar and put final piece together. Though I did not run into any problems while doing this but a big breakdown was that I accidently which brought a hault to my project for a day. Overall, I am pretty happy with the way this tunred out but in the future I would work on the wiring, improve the code to do multiple tasks at one time and maybe modify this into a Ukulele because there are 4 strings and I have 4 finger controls! 
+My final milestone was the make the glove which would represent the keys of the guitar and put final piece together. Though I did not run into any major problems while doing this but a breakdown was that I accidently broke one of the accelerometer pins which brought a hault to my project for a day. Overall, I am pretty happy with the way this tunred out but in the future I would work on the wiring, improve the code to do multiple tasks at one time and maybe modify this into a Ukulele because there are 4 strings and I have 4 finger controls! 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzfacvheviM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
