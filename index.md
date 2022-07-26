@@ -13,7 +13,8 @@ This is an Airduino Air Guitar, consisting of two parts, a glove and a strummer.
 <img src= "https://user-images.githubusercontent.com/72050310/180518314-00cac4af-10e9-4404-a8d4-ea1087dc9ce2.jpg" width = "400" height = "200"/>
 
 # Project Video 
-https://user-images.githubusercontent.com/72050310/180522914-b6111730-d223-4188-ae10-3517eb8f7634.mp4
+<video src="https://user-images.githubusercontent.com/72050310/180522914-b6111730-d223-4188-ae10-3517eb8f7634.mp4" controls="controls" style="max-width: 730px;">
+</video>
   
 # Final Milestone
 My final milestone was to  make the glove which would represent the keys of the guitar and put final piece together. Though I did not run into any major problems while doing this but a breakdown was that I accidently broke one of the accelerometer pins which brought a hault to my project for a day. Overall, I am pretty happy with the way this tunred out but in the future I would work on the wiring, improve the code to do multiple tasks at one time and maybe modify this into a Ukulele because there are 4 strings and I have 4 finger controls! 
@@ -36,17 +37,17 @@ Here is a list of everything you need for the project!
 
 | **Item** | **Quantity** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Breadboard | 1 | $2.99/count |https://www.amazon.com/Breadboards-Solderless-Breadboard-Distribution-Connecting/dp/B07DL13RZH/ref=sr_1_3?crid=2KWZHQGUK88W&keywords=breadboard&qid=1658521720&sprefix=breadboar%2Caps%2C149&sr=8-3  |
-| Wires | 20 | $0.06/count |https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_1_sspa?keywords=jumper+wires&qid=1658521821&sprefix=jumper%2Caps%2C152&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFVNVA2TjBUVFNJQjkmZW5jcnlwdGVkSWQ9QTA5Mjk0MDMzSTRGUVhYOU1KSkRBJmVuY3J5cHRlZEFkSWQ9QTA5NDU0MzYxSkE3VExKQkZEQUxaJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ== |
-| Arduino | 1 | $27 |https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/ref=sr_1_3?crid=87ZRJM3HZ5ZI&keywords=arduino&qid=1658521866&sprefix=arduino%2Caps%2C140&sr=8-3 |
-| Speaker/Amplifier | 1 | $11.99 | https://www.amazon.com/Degraw-DIY-Speaker-Kit-Amplifier/dp/B07CRVRG83/ref=sr_1_10?keywords=arduino+speaker&qid=1658521901&sprefix=arduino+spea%2Caps%2C146&sr=8-10 |
-| Accelerometer | 1 | $3.33/count | https://www.amazon.com/HiLetgo-MPU-6050-Accelerometer-Gyroscope-Converter/dp/B00LP25V1A/ref=sr_1_1_sspa?keywords=accelerometer&qid=1658521935&sprefix=acceler%2Caps%2C145&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVDVTMzIxRzc3WFBHJmVuY3J5cHRlZElkPUEwMjY5Mjc4MVUyVzVOMFlQQ0tPWiZlbmNyeXB0ZWRBZElkPUEwNzcxMjIxMU9JSTA4S001Wk40MiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=  |
-| Ultrasonic Sensor | 1 | $2.29/count | https://www.amazon.com/HiLetgo-MPU-6050-Accelerometer-Gyroscope-Converter/dp/B00LP25V1A/ref=sr_1_1_sspa?keywords=accelerometer&qid=1658521935&sprefix=acceler%2Caps%2C145&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVDVTMzIxRzc3WFBHJmVuY3J5cHRlZElkPUEwMjY5Mjc4MVUyVzVOMFlQQ0tPWiZlbmNyeXB0ZWRBZElkPUEwNzcxMjIxMU9JSTA4S001Wk40MiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= |
-| Soldering Kit | 1 | $19.99 | https://www.amazon.com/Soldering-Iron-Kit-Temperature-Desoldering/dp/B07S61WT16/ref=sr_1_1_sspa?crid=1EKZA334X4MH&keywords=soldering+kit&qid=1658522013&sprefix=soldering+kir%2Caps%2C142&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExSEpKVUtBU1BQUEdSJmVuY3J5cHRlZElkPUEwODkwNDQ2M0s5QjU4Wk0yVlhJSiZlbmNyeXB0ZWRBZElkPUEwNTExNjg2MjFFSzAyMTdSTDk0UiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= |
-| Glove | 1 | $5.99 | https://www.amazon.com/Moisturizing-Serving-Archival-Cleaning-Inspection/dp/B07PY639YJ/ref=sr_1_4_sspa?crid=2KYDL04NVQEVS&keywords=fabric+gloves&qid=1658522096&sprefix=fabric+glove%2Caps%2C143&sr=8-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyRFgyNjc0Rk9LRTZVJmVuY3J5cHRlZElkPUEwMzE4OTIwMzRaSDI1QVdUOFNXNCZlbmNyeXB0ZWRBZElkPUEwOTYzMDQ0MkZFTzhFUlhaQUNIUSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= |
-| Hot Glue Gun | 1 | $14.99 | https://www.amazon.com/Gorilla-8401509-Hot-Glue-Sticks/dp/B07K791YRP/ref=sr_1_1_sspa?keywords=hot+glue+gun&qid=1658522128&sprefix=Hot+glue+%2Caps%2C140&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTzRQU0o3UzFPUUZQJmVuY3J5cHRlZElkPUEwMzg1NTI3M1JTMzhKNUNKWVJBMyZlbmNyeXB0ZWRBZElkPUEwODEzNzI2MTZUQVhZRjVWMDJFOCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= |
-| Resistors | 4 | $1.04/count | https://www.amazon.com/AUKENIEN-1250pcs-Resistor-Assortment-Resistors/dp/B0967TG6XR/ref=sr_1_1_sspa?keywords=resistor+330+ohm&qid=1658522150&sprefix=resistors+330%2Caps%2C142&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyV1c2RDEwME1BTkZDJmVuY3J5cHRlZElkPUEwODk1ODQxMTFXNDdCTjAxQzBFJmVuY3J5cHRlZEFkSWQ9QTAxNTkzMzNOVkYzOUc3VjA2M0Qmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl |
-| Conductive Fabric | 1 | $15.99 |https://www.amazon.com/Enclosures-Military-Conductive-Material-Bluetooth%EF%BC%891/dp/B09S36QP4P/ref=sr_1_1_sspa?crid=3EM1Q0GSLPD9J&keywords=conductive+fabric&qid=1658522179&sprefix=conductive+fabri%2Caps%2C139&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTlBWUERWMVM3NDUxJmVuY3J5cHRlZElkPUEwODA3MTk3MTBOUzJDNkpWVDBIVyZlbmNyeXB0ZWRBZElkPUEwMDc1OTE4MUxGMEg1Q0VTRjg3SCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= |
+| Breadboard | 1 | $2.99/count |https://tinyurl.com/yc8njk2w  |
+| Wires | 20 | $0.06/count |https://tinyurl.com/4f9u42mw |
+| Arduino | 1 | $27 |https://tinyurl.com/4e8n27yw |
+| Speaker/Amplifier | 1 | $11.99 | https://tinyurl.com/wwpmkfcx |
+| Accelerometer | 1 | $3.33/count | https://tinyurl.com/5896vvbk |
+| Ultrasonic Sensor | 1 | $2.29/count | https://tinyurl.com/5896vvbk |
+| Soldering Kit | 1 | $19.99 | https://tinyurl.com/3embv5ct |
+| Glove | 1 | $5.99 | https://tinyurl.com/myjw8ejd |
+| Hot Glue Gun | 1 | $14.99 | https://tinyurl.com/5c53sdv5 |
+| Resistors | 4 | $1.04/count | https://tinyurl.com/5yb2psfc |
+| Conductive Fabric | 1 | $15.99 |https://tinyurl.com/vr52v38t |
 
 
 # Schematic 
