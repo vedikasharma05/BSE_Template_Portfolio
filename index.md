@@ -42,7 +42,7 @@ Here is a list of everything you need for the project!
 | Arduino | 1 | $27 |https://tinyurl.com/4e8n27yw |
 | Speaker/Amplifier | 1 | $11.99 | https://tinyurl.com/wwpmkfcx |
 | Accelerometer | 1 | $3.33/count | https://tinyurl.com/5896vvbk |
-| Ultrasonic Sensor | 1 | $2.29/count | https://tinyurl.com/5896vvbk |
+| Ultrasonic Sensor | 1 | $1.83/count | https://tinyurl.com/3c6zuk3w |
 | Soldering Kit | 1 | $19.99 | https://tinyurl.com/3embv5ct |
 | Glove | 1 | $5.99 | https://tinyurl.com/myjw8ejd |
 | Hot Glue Gun | 1 | $14.99 | https://tinyurl.com/5c53sdv5 |
