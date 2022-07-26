@@ -59,11 +59,11 @@ NOTE: The pins on the Arduino Uno do not represent the actual orientation, it is
 In my project, I used an external VRM for the speaker since the Ardunino can only supply 200mA, the speaker needed more than that. So, the speaker is powered by the external VRM. 
 
 # Pinout/Useful Links 
-1. Arduino 
+1. Arduino - 
 https://docs.arduino.cc/hardware/uno-rev3
-3. Accelerometer to Arduino 
+3. Accelerometer to Arduino - 
 https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/
-4. Ultrasonic to Arduino 
+4. Ultrasonic to Arduino - 
 https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6 
 5. Voltage Regulator Module (VRM) - pinout for this is in the product on amazon, you can find the link in the bill of materials. 
 
